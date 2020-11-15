@@ -1,0 +1,105 @@
+
+<div class="col-md-4 single-right-left ">		
+	<div class="flexslider">		
+		<div class="thumb-image"> <img src="{{detail.image}}" data-imagezoom="true" class="view"> </div>		
+		<div class="clearfix"></div>
+	</div>				
+</div>
+            
+			<div class="col-md-8 single-right-left simpleCart_shelfItem">
+				<h3>{{detail.title}}</h3>
+				<p><span class="item_price">{{detail.basePrice}} VND</span>
+				</p>
+				<div class="rating1">
+					<ul class="stars">
+						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="description">
+					<h5>Check delivery, payment options and charges at your location</h5>
+					<form action="#" method="post">
+						<input type="text" value="Enter pincode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter pincode';}"
+						    required="">
+						<input type="submit" value="Check">
+					</form>
+				</div>
+				<div class="color-quality">
+					<div class="color-quality-right">
+						<h5>Quality :</h5>
+						<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
+								<option value="null">1</option>
+								<option value="null">2</option> 
+								<option value="null">3</option>					
+								<option value="null">4</option>								
+							</select>
+					</div>
+				</div>
+				
+				<div class="occasion-cart">
+					<div class="shoe single-item single_page_b">
+						<form action="#" method="post">
+							<input type="hidden" name="cmd" value="_cart">
+							<input type="hidden" name="add" value="1">
+							<input type="hidden" name="shoe_item" value="Chikku Loafers">
+							<input type="hidden" name="amount" value="405.00">
+							<input type="submit" name="submit" value="Add to cart" class="button add">
+
+							<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+						</form>
+
+					</div>
+
+				</div>
+				<ul class="social-nav model-3d-0 footer-social social single_page">
+					<li class="share">Share On : </li>
+					<li>
+						<a href="#" class="facebook">
+							<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="twitter">
+							<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="instagram">
+							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="pinterest">
+							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="clearfix"> </div>
+			<!--/tabs-->
+			<div class="responsive_tabs">
+				<div id="horizontalTab">
+					<ul class="resp-tabs-list">
+						<li>Description</li>
+					</ul>
+					<div class="resp-tabs-container">
+						<!--/tab_one-->
+						<div class="tab1">
+
+							<div class="single_page">
+								<h6>Top 100 cuốn sách bán chạy nhất</h6>
+								<p>{{detail.description}}</p>
+								
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
