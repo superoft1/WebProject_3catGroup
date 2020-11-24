@@ -12,7 +12,25 @@ const bookDetailRouter = require('./routes/detailbook');
 var signIn = require('./routes/signin');
 var signUp = require('./routes/signup');
 
+var mysql = require('mysql')
+
+var connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'canonind12345',
+  database: 'book_store'
+})
+
 var app = express();
+connection.connect()
+connection.query('SELECT * from book_store.book_info', function (err, rows, fields) {
+  if (err) throw err
+
+  console.log('The solution is: ', rows[0])
+})
+
+connection.end()
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
